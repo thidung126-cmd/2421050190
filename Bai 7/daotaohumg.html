@@ -4,8 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đào Tạo</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .danh-sach-muc{
+            padding: 0;
+            margin:0;
+             /* bỏ dấu chấm ở danh sách khi dùng ul,li */
+            list-style:none;
+            display:flex;
+            /* gap khoảng cách các đối tượng ở trong */
+            gap:20px;
+        }
+        .danh-muc{
+            background-color:#198cf0;
+            
+
+        }
+        
+        .lien-ket{
+            color:white;
+            /*text-decoration: bỏ gạch chân thẻ a */
+            text-decoration:none;
+        }
+        .muc{
+            /* padding:10px; */
+        }
+        main{
+            display:flex;
+        }
+        .trai{
+            width:20%;
+            
+            height:100vh;
+            /* tạo đường viền dùng border */
+            /* 3 tham số:độ dày,loại đường viền,màu sách */
+            border-right: 1px solid blue;
+        }
+        input{
+            width:100%;
+            padding:5px 0;
+            border-
+        }
+        .quen-mat-khau{
+            display:flex;
+            justify-content:flex-end;
+        }
+        .quen-mat-khau-lien-ket{
+            color:#198cf0;
+            text-decoration:none;
+        }
+        button{
+            width:100%;
+            padding:5px 0;
+            border-radius:5px;
+
+        }
+        .login{
+            margin-bottom:10px;
+        }
+        .phai{
+            width:80%;
+            height:100px;
+            
+        }
+        .tin{
+            width:95%;
+            height:100px;
+            margin: 20px auto;
+            border:1px solid #198cf0;
+        }
+        form{
+            background-color:antiquewhite;
+            width:100%;
+            height:100px;
+
+        }
+
+        .khoi-dang-nhap{
+            background-color:rgb(166, 163, 163);
+            width:100%;
+            height:100px;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- danh mục -->
+    <nav class="danh-muc">
+        <ul class="danh-sach-muc">
+            <li class="muc"><a href="#" class="lien-ket">Thực tập,Đồ án</a></li>
+            <li class="muc"><a href="#" class="lien-ket">Thủ tục một cửa</a></li>
+            <li class="muc"><a href="#" class="lien-ket">Một cửa online</a></li>
+            <li class="muc"><a href="#" class="lien-ket">Email HUMG</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="trai">
+            <div class="khoi-dang-nhap">
+                <form action="">
+                    <div class="khoi-thong-tin">
+                        <p>Tài khoản</p>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="khoi-thong-tin">
+                        <p>Mật Khẩu</p>
+                        <input type="password" name="" id="">
+                    </div>
+                    <div class="quen-mat-khau">
+                        <a class="quen-mat-khau-lien-ket" href="#">Quên mật khẩu</a>
+                        
+                    </div>
+                    <div class="khoi-thong-tin">
+                        <button>Đăng Nhập</button>
+                        <button>Đăng Nhập với Microsoft</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+        <div class="phai">
+            <div class="danh-sach-tin">
+                <div class="tin">
+            </div>
+
+        </div>
+    </main>
 </body>
 </html>
