@@ -20,6 +20,7 @@
         .danh-muc{
             background-color:#198cf0;
             
+            
 
         }
         
@@ -36,16 +37,31 @@
         }
         .trai{
             width:20%;
-            
             height:100vh;
             /* tạo đường viền dùng border */
             /* 3 tham số:độ dày,loại đường viền,màu sách */
-            border-right: 1px solid blue;
+            border-right: 1px solid #198cf0;
+        }
+        .khoi-dang-nhap{
+            width:100%;
+            height:200px;
+        }
+        form{
+            width:80%;
+            margin:10px auto;
+        }
+        .khoi-thong-tin{
+            width:100%;
+            margin-bottom:10px;
+        }
+        p{
+            margin:0;
         }
         input{
             width:100%;
             padding:5px 0;
-            border-
+            /* bo tròn dùng border-radius */
+            border-radius:5px;
         }
         .quen-mat-khau{
             display:flex;
@@ -66,7 +82,7 @@
         }
         .phai{
             width:80%;
-            height:100px;
+            height:100vh;
             
         }
         .tin{
@@ -74,19 +90,27 @@
             height:100px;
             margin: 20px auto;
             border:1px solid #198cf0;
+            border-radius:10px;
         }
-        form{
-            background-color:antiquewhite;
-            width:100%;
-            height:100px;
+        .chuc-nang{
+            width:95%;
+            height:30px;
+            display:flex;
+            margin:5px auto;
+            padding:5px;
+            justify-content:space-between;
+            border-bottom:1px solid #198cf0;
+        }
+        .xem-tiep{
+            color:#198cf0;
+            text-decoration:none;
+        }
+        .lien-ket-xem-tiep{
 
         }
+        
 
-        .khoi-dang-nhap{
-            background-color:rgb(166, 163, 163);
-            width:100%;
-            height:100px;
-        }
+        
     </style>
 </head>
 <body>
@@ -116,8 +140,8 @@
                         
                     </div>
                     <div class="khoi-thong-tin">
-                        <button>Đăng Nhập</button>
-                        <button>Đăng Nhập với Microsoft</button>
+                        <button class="login">Đăng Nhập</button>
+                        <button class="login">Đăng Nhập với Microsoft Office</button>
                     </div>
                 </form>
 
@@ -127,9 +151,15 @@
         <div class="phai">
             <div class="danh-sach-tin">
                 <div class="tin">
+                    <div class="chuc-nang">
+                        <div class="tieu-de">Tin tức</div>
+                        <div class="xem-tiep"><a class="lien-ket-xem-tiêp" href="">Xem tiếp</a></div>
+                    </div>
             </div>
 
         </div>
+    </div>
+
     </main>
 </body>
 </html>
