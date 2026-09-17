@@ -4,109 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đào Tạo</title>
-    <style>
-        body{
-            margin:0;
-        }
-        .danh-sach-muc{
-            padding: 0;
-            margin:0;
-             /* bỏ dấu chấm ở danh sách khi dùng ul,li */
-            list-style:none;
-            display:flex;
-            /* gap khoảng cách các đối tượng ở trong */
-            gap:20px;
-        }
-        .danh-muc{
-            background-color:#198cf0;
-            
-            
-
-        }
-        
-        .lien-ket{
-            color:white;
-            /*text-decoration: bỏ gạch chân thẻ a */
-            text-decoration:none;
-        }
-        
-        main{
-            display:flex;
-        }
-        .trai{
-            width:20%;
-            height:100vh;
-            /* tạo đường viền dùng border */
-            /* 3 tham số:độ dày,loại đường viền,màu sách */
-            border-right: 1px solid #198cf0;
-        }
-        .khoi-dang-nhap{
-            width:100%;
-            height:200px;
-        }
-        form{
-            width:80%;
-            margin:10px auto;
-        }
-        .khoi-thong-tin{
-            width:100%;
-            margin-bottom:10px;
-        }
-        p{
-            margin:0;
-        }
-        input{
-            width:100%;
-            padding:5px 0;
-            /* bo tròn dùng border-radius */
-            border-radius:5px;
-        }
-        .quen-mat-khau{
-            display:flex;
-            justify-content:flex-end;
-        }
-        .quen-mat-khau-lien-ket{
-            color:#198cf0;
-            text-decoration:none;
-        }
-        button{
-            width:100%;
-            padding:5px 0;
-            border-radius:5px;
-
-        }
-        .login{
-            margin-bottom:10px;
-        }
-        .phai{
-            width:80%;
-            height:100vh;
-            
-        }
-        .tin{
-            width:95%;
-            height:100px;
-            margin: 20px auto;
-            border:1px solid #198cf0;
-            border-radius:10px;
-        }
-        .chuc-nang{
-            width:95%;
-            height:30px;
-            display:flex;
-            margin:5px auto;
-            padding:5px;
-            justify-content:space-between;
-            border-bottom:1px solid #198cf0;
-        }
-        .xem-tiep{
-            color:#198cf0;
-            text-decoration:none;
-        }
-        
-
-        
-    </style>
+        <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
     <!-- danh mục -->
@@ -131,26 +29,163 @@
                         <input type="password" name="" id="">
                     </div>
                     <div class="quen-mat-khau">
-                        <a class="quen-mat-khau-lien-ket" href="#">Quên mật khẩu</a>
+                        <a class="quen-mat-khau-lien-ket" href="#">Quên mật khẩu?</a>
                         
                     </div>
                     <div class="khoi-thong-tin">
-                        <button class="login">Đăng Nhập</button>
-                        <button class="login">Đăng Nhập với Microsoft Office</button>
+                        <button class="login1">Đăng Nhập</button>
+                        <button class="login2">Đăng Nhập với Microsoft Office</button>
                     </div>
+                     <div class="khoi-noi-dung-khac">
+                        <div><p class="trang-chu">🛖Trang chủ</p></div>
+                        <hr class="line1">
+                        <div><p class="khao-sat-danh-gia">Khảo sát đánh giá</p></div>
+                        <hr class="line1">
+                    </div>
+                   
                 </form>
+                 
 
             </div>
-
+              <div class="khoi-logo">
+                        <img class="anh-logo"src="logo.jpg" alt="">
+                        <p class="tieu-de2">MOHN-V 2026.08F.29</p>
+                        <p class="tieu-de2">Design by <span style="color:#198cf0">aqtech.vn</span></p>
+                </div>
         </div>
         <div class="phai">
             <div class="danh-sach-tin">
+                <!-- Tin tức -->
                 <div class="tin">
                     <div class="chuc-nang">
                         <div class="tieu-de">Tin tức</div>
-                        <div class="xem-tiep"><a class="lien-ket-xem-tiêp" href="">Xem tiếp</a></div>
+                        <div class="xem-tiep">Xem tiếp ></div>
+                    </div>
+                <div class="danh-sach-tin-tuc">
+                    
+                    <div class="noi-dung-tin">
+                        <img class="anh-bai" src="tinTuc.jpg" alt="">
+                        <div class="ngay-va-line">
+                         <hr class="line3">
+                        <p class="Ngay-dang"> 05/05/2026</p>
+                        </div>
+                        <p class="tieu-de">Về việc đăng ký khối lượng học tập kỳ phụ năm học 2025-2026</p>
+                    </div>
+                    <div class="noi-dung-tin">
+                        <img class="anh-bai" src="tinTuc.jpg" alt="">
+                        <div class="ngay-va-line">
+                        <hr class="line3">
+                        <p class="Ngay-dang"> 14/04/2026</p>
+                        </div>
+                        <p class="tieu-de">Về việc nghỉ học</p>
+                    </div>
+                    <div class="noi-dung-tin">
+                        <img class="anh-bai"src="tinTuc.jpg" alt="">
+                        <div class="ngay-va-line">
+                        <hr class="line3">
+                        <p class="Ngay-dang"> 24/09/2024</p>
+                        </div>
+                        <p class="tieu-de">Trường Đại học Mỏ-Địa chất đạt chứng nhận kiểm định chất lượng cở sở giáo dục(chu kỳ 2)</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Thông báo -->
+             <div class="thongBao">
+                
+                    <div class="chuc-nang">
+                        <div class="tieu-de">Thông Báo</div>
+                        <div class="xem-tiep">Xem tiếp ></div>
+                    </div>
+                    <div class="danh-sach-thong-bao">
+                        <div class="ben-trai">
+                        <div class="noi-dung-thong-bao">
+                            <img class="anh-bai"src="thongBao.jpg" alt="">
+                            <div class="ngay-va-line">
+                              <hr class="line3">
+                            <p class="Ngay-dang">21/08/2026</p>
+                            </div>
+                            <p class="tieu-de">Về việc ghép lớp và mở lớp học kỳ 1 năm học 2026-2027</p>
+                        </div>
+                        <div class="noi-dung-thong-bao">
+                            <img class="anh-bai"src="thongBao2.jpg" alt="">
+                            <div class="ngay-va-line">
+                             <hr class="line3">
+                            <p class="Ngay-dang">24/08/2026</p>
+                            </div>
+                            <p class="tieu-de">Thông báo về việc nghỉ học nhân dịp Quốc Khánh 2/9</p>
+                            
+                        </div>
+                        </div>
+                        <div class="ben-phai">
+                    <div class="thong-tin">
+                        <p class="tieu-de3" id="gach">>> Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027<span class="Ngay-dang2"> 11/08/2026</span></p><br>
+                        <hr class="line4">
+                        <p class="tieu-de3" id="gach">>>Về việc đăng ký khối lượng học tập học kỳ 1 năm 2026-2027 <span class="Ngay-dang2">20/07/2026</span></p><br>
+                        <hr class="line4">
+                        <p class="tieu-de3" id="gach">>> Thông báo về việc kiểm tra điều kiện xét tốt nghiệp đợt 3 năm học 2025-2026(Tháng 07/2026)<span class="Ngay-dang2">16/07/2026</span></p><br>
+                        <hr class="line4">
+                        
+                    </div>
+                        </div>
+
+                    </div>
+                    
+            </div>
+            <!-- Hướng dẫn -->
+             <div class="huongDan">
+                    <div class="chuc-nang">
+                        <div class="tieu-de">Hướng dẫn</div>
+                        <div class="xem-tiep">Xem tiếp ></div>
+                    </div>
+                    <div class="danh-sach-huong-dan">
+                        <div class="ben-trai">
+                        <div class="noi-dung-huong-dan">
+                            <img class="anh-bai"src="huongdan.jpg" alt="">
+                            <div class="ngay-va-line">
+                            <hr class="line3">
+                            <p class="Ngay-dang">18/11/2025</p>
+                            </div>
+                            <p class"tieu-de">Hướng dẫn đăng ký khối lượng học tập tại trang web</p>
+                        </div>
+                        <div class="noi-dung-huong-dan">
+                            <img class="anh-bai"src="huongdan2.jpg" alt="">
+                            <div class="ngay-va-line">
+                            <hr class="line3">
+                            <p class="Ngay-dang">01/08/2023</p>
+                            </div>
+                            <p class"tieu-de">Hướng dẫn lấy lại mật khẩu trang web daotaodaihoc.humg.edu.vn</p>
+                        </div>
+                        </div>
+                       <div class="ben-phai">
+                     <div class="thong-tin">
+                        <p class="tieu-de3" id="gach">>> Hướng dẫn lấy lại mật khẩu e-mail HUMG <span class="Ngay-dang2">01/08/2023</span></p><br>
+                        <hr class="line4">
+                        <p class="tieu-de3" id="gach">>> Hướng dẫn đăng ký khối lượng học tập tại trang web daotaodaihoc.humg.edu.vn<span class="Ngay-dang2">19/12/2024</span></p><br>
+                        <hr class="line4">
+                        <p class="tieu-de3" id="gach">>> Hướng dẫn kiểm tra,tra cứu trực tuyến thông tin về bằng tốt nghiệp của trường Đại học Mỏ-Địa chất<span class="Ngay-dang2">11/05/2021</span></p><br>
+                        <hr class="line4">
+                    </div>
+                    </div>
                     </div>
             </div>
+            <!-- Cài đặt -->
+             <div class="caiDat">
+                    <div class="chuc-nang">
+                        <div class="tieu-de">Cài đặt App mobile</div>
+                    </div>
+                    <div class="danh-sach-cai-dat">
+                        <div class="noi-dung-cai-dat">
+                            <img class="anh-bai2"src="caidat.jpg" alt="">
+                        </div>
+                        <div class="noi-dung-cai-dat">
+                            <img class="anh-bai2"src="caidat2.jpg" alt="">
+                        </div>
+
+                    </div>
+            </div>
+           
+
 
         </div>
     </div>

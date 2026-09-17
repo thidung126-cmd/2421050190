@@ -1,0 +1,162 @@
+ body{
+            margin:0;
+        }
+        .danh-muc{
+            background-color:#198cf0;
+        }
+        .danh-sach-muc{
+            padding:0;
+            margin:0;
+            /* bỏ dấu chấm ở danh sách khi dùng ul,li */
+            list-style:none;
+            display:flex;
+            /* khoảng cách giữa các mục */
+            gap: 20px;
+        }
+        .lien-ket{
+            color:white;
+            /* bỏ gạch chân */
+            text-decoration:none;
+        }
+        .muc{
+            gap: 10px;
+        }
+
+        main{
+            display:flex;
+        }
+        .trai{
+            width:18%;
+            height:100vh;
+            /* 3 tham số: độ dày, loại đường viền, màu sắc */
+            border-right: 1px solid #198cf0;
+        }
+        .phai{
+            width:82%;
+            height:100vh;
+        }
+        .khoi-dang-nhap{
+            width:100%;
+            height:100px;
+        }
+        .quen-mat-khau-lien-ket{
+            margin:5px;
+        }
+
+        form{
+            width:80%;
+            margin:10px auto;
+        }
+
+        .khoi-thong-tin{
+            width:100%;
+            margin-bottom: 10px;
+        }
+        p{
+            margin:0;
+        }
+
+        input{
+            width:100%;
+            padding: 5px 0;
+            border-radius: 5px;
+        }
+
+        .quen-mat-khau-lien-ket{
+            color:#198cf0;
+            display: flex;
+            justify-content:flex-end;
+        }
+
+        button{
+            width:100%;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .login{
+            margin-bottom:10px;
+            background-color:#83c5ff;
+        }
+        .login-with-mco{
+            background-color:#198cf0;
+        }
+
+        .lien-ket-trang-chu{
+            text-decoration:none;
+            color:#198cf0;
+        }
+        .lien-ket-khao-sat-danh-gia{
+            text-decoration:none;
+            color:#198cf0;
+        }
+        
+
+        
+
+        .noi-dung{
+            width: 95%;
+            min-height: 100px;  /* Chiều cao tối thiểu, có ảnh thì tự giãn to ra */
+            margin:20px auto;
+            border: 1px solid #198cf0;
+            border-radius: 10px;
+            padding:15px; /* Thêm khoảng đệm bên trong để ảnh không dính sát mép viền */
+        }
+
+        .chuc-nang{
+            width: 95%;
+            margin:10px auto;
+            display: flex;
+            justify-content:space-between;
+        }
+        .tin-tuc{
+            margin:-15px 5px 0px -20px;
+        }
+      
+        .line{
+            /* thẻ border none dùng để xóa viền mặc định */
+            border: none; 
+            border-top: 1px solid #198cf0;
+            margin:-10px 10px; 
+        }
+        .line1{
+            border: none; 
+            border-top: 1px solid #198cf0;
+        }
+        .line2{
+            display:flex;
+            margin: 17px 20px -3px -10px;
+        }
+
+        .lien-ket-xem-tiep{
+            display: flex;
+            text-decoration:none;
+            justify-content:flex-end;
+            color:#198cf0;
+            font-size:13px;
+        }
+
+        .hang-anh{
+            display:flex;
+            gap:15px; /*khoảng cách giữa 2 ảnh*/
+        }
+
+        .img{
+            max-width:100%;
+            height:auto;
+            display:block;
+            margin-top:20px;
+            border-radius: 10px;
+        }
+
+        .cai-dat-app{
+            display:flex;
+        }
+
+        .img-ggpl{
+            width: 100px;
+            margin:20px 15px;
+        }
+        .img-ast{
+            width: 115px;
+            margin:23px 15px;
+        }
