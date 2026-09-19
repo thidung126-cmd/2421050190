@@ -9,7 +9,7 @@ body{
     align-items: center;
 }
 .lien-ket-muc{
-    text-decoration-line: none;
+    text-decoration: none;
     color:#DBDBDD;
     font-weight:bold;
 }
@@ -30,9 +30,9 @@ header{
     width:50px;
 }
 
-.avatar{
-    width:80%;
-    border-radius: ;
+.avata{
+    width:50%;
+    
 }
 .dang-chon{
     background-color:#4E4B52;
@@ -40,8 +40,8 @@ header{
 .banner{
    
     width:95%;
-    height:20vh;
-    margin:2opx auto;
+    /* height:20vh; */
+    margin:20px auto;
     border-radius:20px;
 }
 .banner-anh{
@@ -50,26 +50,34 @@ header{
 }
 .danh-sach-the-loai{
     width:95%;
-    background-color:red;
     height:20vh;
-    margin:20px auto;
+    margin:10px auto;
+
 }
 .phim{
     display:flex;
     justify-content: space-between;
+    gap:8px;
 }
 .phim-poster{
-    width:19%;
+    width:20%;
     height:15vh;
-
+    border-radius: 15px;
     background-color:aliceblue;
 }
 .danh-sach-nhan-vat{
     display:flex;
     justify-content: space-between;
+    gap:1px;
 }
 .nhan-vat{
-    width:300px;
-    height:300px;
+    width:200px;
+    height:200px;
     border-radius:50%;
+}
+.thong-tin{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    color:gray;
 }
