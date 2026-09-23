@@ -3,23 +3,31 @@ body{
     color:white;
 }
 .danh-sach-muc{
+    /* xóa các dấu ở trước danh sách */
     list-style:none;
     display:flex;
+    /* khoảng cách */
     gap:20px;
     align-items: center;
 }
 .lien-ket-muc{
+    /* làm mất dấu gạch ngang ở dưới đường dẫn */
     text-decoration: none;
     color:#DBDBDD;
     font-weight:bold;
 }
 header{
+    /* cho các dữ liệu cùng 1 dòng */
     display:flex;
+    /* theo thiều dọc */
     align-items:center;
+    /* theo chiều ngang */
     justify-content: space-between;
 }
 .muc{
+    /* độ rộng khung */
     padding:15px;
+    /* bo tròn góc ảnh */
     border-radius:25px;
 }
 /* hover là trỏ tới đâu đổi màu tới đó */
