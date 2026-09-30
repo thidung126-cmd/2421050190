@@ -25,12 +25,14 @@
             display:flex;
         }
         .trai{
+            /* width phải đi cùng với border thì mới tạo được vạch kẻ */
             width:20%;
             /* height:200vh; */
             height:150vh;
             /* tạo đường viền dùng border */
             /* 3 tham số:độ dày,loại đường viền,màu sách */
             border-right: 1px solid #198cf0;
+            /* có thêm display thì kẻ sẽ hết mức */
             display: flex;
             flex-direction: column;
             
@@ -121,7 +123,6 @@
           align-items:center;
           gap:10px;
          
-
         }
         .trang-chu{
             color:#198cf0;
@@ -166,7 +167,7 @@
             width:95%;
             /* height:100px; */
             margin: 20px auto;
-            border:3px solid #198cf0;
+            border:1px solid #198cf0;
             border-radius:10px;
         }
         .danh-sach-tin-tuc{
@@ -189,6 +190,7 @@
         }
         .Ngay-dang{
            text-align: right;
+           /* ko cho nd bị xuống dòng */
            white-space: nowrap;
            
         }

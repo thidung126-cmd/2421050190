@@ -55,10 +55,11 @@
         document.writeln(soThunhat);
         soThunhat-=soThuhai;
         document.writeln(soThunhat);
-
+        //nối chuỗi
         var ho = "Nguyen";
         document.writeln("<br>"+ ho +" "+ ten);
         document.writeln("<br>");
+        // leng.th độ dài
         document.writeln(ho.length);
         // kiem tra kieu du lieu cua bien
         document.writeln(typeof(ho));
@@ -78,6 +79,120 @@
         document.writeln(hoVaTen.replace("Nguyen","Le"));
         document.writeln("<br>");
         document.writeln(hoVaTen.toLocaleLowerCase());
+        // Hàm date
+        // khai bao ngay gio hien tai
+        var homNay = new Date();
+        document.writeln("<br>");
+        document.write(homNay);
+        // truyền ngày cụ thể
+        var ngay = new Date("09/30/2026");
+        document.writeln("<br>");
+        document.writeln(ngay);
+        // hàm gọi nam
+        var namNay = homNay.getFullYear();
+        document.writeln("<br>");
+        document.writeln(namNay);
+        var thangNay = homNay.getMonth()+1;
+        document.writeln("<br>");
+        document.writeln(thangNay);
+        // ham ngay
+        var ngayHomNay = homNay.getDate();
+        document.writeln("<br>");
+        document.writeln(ngayHomNay);
+        //ham thu
+        var thu = homNay.getDay() +1 ;
+        document.writeln("<br>");
+        document.writeln(thu);
+        document.writeln("<br>");
+        document.writeln("Hom nay la thu "+ thu + " ngày " + ngayHomNay + " tháng " + thangNay + " năm " + namNay);
+        //Mảng
+        var mangSo = [1,2,3,4,5];
+        document.writeln("<br>");
+        // lấy số 3 trong ds mảng
+        document.writeln(mangSo[2]);
+        document.writeln("<br>");
+        // ktra độ dài của mảng
+        document.writeln(mangSo.length);
+        document.writeln("<br>");
+        var mangTen = ["Công Anh","Dung","Nhi"]
+        document.writeln(mangTen[2]);
+        document.writeln("<br>");
+        var mang = [1,2,3,4,5,"Dung","Canh","Nhi"]
+        document.writeln(mang[5]);
+        var d = mang.concat(mangSo,mangTen)
+        document.writeln("<br>");
+        d.push("duy");
+        // them dau "-"
+        document.writeln(d.join("-"));
+        document.writeln("<br>");
+        // in phan tu cuoi trong mang
+        document.writeln(d.pop());
+        document.writeln("<br>");
+        document.writeln(mangSo.reverse());
+        //Object
+        var thongTinSinhVien = {
+            ten: "Nguyen Thi Dung",
+            namSinh: 2006,
+            queQuan:{
+                tinh: "Thanh Hoa",
+                xa: "Hoang Loc"
+            }
+        };
+        document.writeln(thongTinSinhVien.queQuan.tinh);
+        tuoi  = namNay - thongTinSinhVien.namSinh;
+        thongTinSinhVien.tuoi = tuoi;
+        // console.log(thongTinSinhVien);
+        //boolean:true nam/false nu
+        thongTinSinhVien.gioiTinh=true;
+    //     var danhSach =[
+    //          {
+    //         ten: "Nguyen Thi Dung",
+    //         namSinh: 2006,
+    //         queQuan:{
+    //             tinh: "Thanh Hoa",
+    //             xa: "Hoang Loc"
+    //         },
+    //         {
+    //         ten: "Nguyen Thi Ha",
+    //         namSinh: 2006,
+    //         queQuan:{
+    //             tinh: "Thanh Hoa",
+    //             xa: "Hau Loc"
+    //         }
+        
+    // ];
+    // cosole.log(danhSach);
+    //== != > <
+    //=== so sanh ca gia tri va KDL
+    var so1 = 5;
+    var so2 = "10";
+    document.writeln("<br>");
+    document.writeln(so1 == so2);
+    //va && hoac||
+    if(thu>=6){
+        document.writeln("Cuoi Tuan");
+    }
+    else if(thu==6){
+        document.writeln("Sap duoc ngu");
+
+    }
+    else{
+        document.writeln("Di hoc");
+    }
+    var so = 5;
+    //kiem tra so chan hay le
+    document.writeln("<br>");
+    if(so%2==0){
+        document.writeln(so+" so chan");
+    }else{
+        document.writeln(so+" so le");
+    }
+        
+        
+        
+
+
+
     </script>
     <!-- Enternal javascript -->
     <script src="script.js"></script>
