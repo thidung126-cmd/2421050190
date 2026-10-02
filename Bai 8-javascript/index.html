@@ -144,30 +144,34 @@
         // console.log(thongTinSinhVien);
         //boolean:true nam/false nu
         thongTinSinhVien.gioiTinh=true;
-    //     var danhSach =[
-    //          {
-    //         ten: "Nguyen Thi Dung",
-    //         namSinh: 2006,
-    //         queQuan:{
-    //             tinh: "Thanh Hoa",
-    //             xa: "Hoang Loc"
-    //         },
-    //         {
-    //         ten: "Nguyen Thi Ha",
-    //         namSinh: 2006,
-    //         queQuan:{
-    //             tinh: "Thanh Hoa",
-    //             xa: "Hau Loc"
-    //         }
+         var danhSach =[
+             {
+            ten: "Nguyen Thi Dung",
+            namSinh: 2006,
+            queQuan:{
+                tinh: "Thanh Hoa",
+                xa: "Hoang Loc"
+              }
+            },
+
+            {
+             ten: "Nguyen Thi Ha",
+             namSinh: 2006,
+             queQuan:{
+                tinh: "Thanh Hoa",
+                xa: "Hau Loc"
+             }
+            }
         
-    // ];
-    // cosole.log(danhSach);
+     ];
+    //  console.log(danhSach);
     //== != > <
     //=== so sanh ca gia tri va KDL
     var so1 = 5;
     var so2 = "10";
     document.writeln("<br>");
     document.writeln(so1 == so2);
+    document.writeln("<br>");
     //va && hoac||
     if(thu>=6){
         document.writeln("Cuoi Tuan");
@@ -179,7 +183,27 @@
     else{
         document.writeln("Di hoc");
     }
-    var so = 5;
+    //có thể chuyển thành chuỗi va lấy ra số cuối
+    //var so = "20000000000000005";
+    //var dai = so.length;
+    //var soCuoiCung = so[doDai-1];
+    //document.writeln("<br>");
+    //document.writeln(doDai)
+    // if(soCuoiCung % 2==0){
+    //     document.writeln(so+" là số chẵn")
+    // }else{
+    //     documet.writeln(so+ "là số lẻ")
+    // }
+
+    // var so = 20000000000000001n;
+    // //kiem tra so chan hay le
+    // document.writeln("<br>");
+    // if(so%2n==0n){
+    //     document.writeln(so+" so chan");
+    // }else{
+    //     document.writeln(so+" so le");
+    // }
+    var so =5;
     //kiem tra so chan hay le
     document.writeln("<br>");
     if(so%2==0){
@@ -187,12 +211,67 @@
     }else{
         document.writeln(so+" so le");
     }
-        
-        
-        
+    document.writeln("<br>");
+    var d = new Date();
+    var theDay = d.getDay();
+    switch(theDay){
+        case 5:
+            document.writeln("Finally Friday");
+            break;
+        case 6:
+            document.writeln("Super Saturday");
+            break;
+        case 0:
+            document.writeln("Sleepy Sunday");
+            break;
+        default:
+            document.writeln("I'm looking fordward to this weekend!");
+    }
+    // document.writeln("<br");
+    // for (var index = 1;index<=10;index++)
+    // {
+    //     document.writeln("<br>");
+    //     document.writeln("Bạn cảm ơn lần thứ "+index);
+    // }
+    //  var mang1 = [1,2,3,4,5,"Dung","Canh","Nhi"]
+    document.writeln("<br");
+    for (var i = 0; i < mang.length; i++){
+     if(isNaN(mang[i])==true){
+         document.writeln("<br>");
+         document.writeln("Xin Chào "+mang[i]);
+    }
+}
+    document.writeln("<br");
+    //while kiểm tra rồi mới làm
+    i=0; 
+    while(i<=10){
+        document.writeln("the number is " +i);
+        document.write("<br/>");
+        i=i+1;
+    }
+    //do while làm rồi mới kiểm tra
+    var j=0;
+    do{
+        document.writeln("the number is " +j);
+        document.write("<br/>");
+        j=j+1;
 
-
-
+    }while(j<=10)
+     document.write("<br/>");
+     //poppup boxes
+     alert("Trang này đã bị lỗi");
+     //
+     var r =confirm("Press a button")
+     if(r==true){
+         document.write("You pressed Ok!");
+     }else{
+         document.write("You pressed Cancel!");
+     }
+     //prompt box
+     var r = prompt("Nhập họ và tên","Nhập tên ở Đây");
+      document.write(r);
+      //functions
+      
     </script>
     <!-- Enternal javascript -->
     <script src="script.js"></script>

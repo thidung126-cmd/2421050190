@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-1</title>
+</head>
+<body>
+    <script>
+        //function chỉ sử dụng khi hàm được gọi mới hiển thị
+        function sayHello(){
+        document.writeln("Hello")
+        }
+        // gọi hàm để hiển thị
+        sayHello();
+        sayHello();
+        sayHello();
+        //có tham số
+        function sayHello2(ten){
+             document.writeln("<br>Xin chào bạn " +ten);
+        }
+        sayHello2("Nguyễn Thị Dung");
+        sayHello2("Ncanh");
+        sayHello2("Mọi người");
+        //
+         document.writeln("<br>");
+        //baitapvenha
+        function tinhTong(a,b){
+            if(isNaN(a)==false && isNaN(b)==false){
+                  document.write(a+b);
+            }
+        }
+         var soThuNhat=prompt("nhập số thứ nhất","");
+         var soThuHai=prompt("nhập số thứ hai ","");
+         tinhTong(soThuNhat,soThuHai);
+    </script>
+</body>
+</html>
