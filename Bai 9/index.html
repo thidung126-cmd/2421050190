@@ -33,6 +33,36 @@
          var soThuNhat=prompt("nhập số thứ nhất","");
          var soThuHai=prompt("nhập số thứ hai ","");
          tinhTong(soThuNhat,soThuHai);
-    </script>
+          document.writeln("<br>");
+         //btvn số 2 
+         //viết hàm tính điểm chữ dựa trên 3 đầu điểm(A,B,C)
+         //tong=A*0.6+ B*0.3+C*0.1=>Điểm chữ  
+                function tinhDiem(a,b,c){
+            if(isNaN(a)==false && isNaN(b)==false && isNaN(c)==false){
+                if(a<0 || a>10 || b<0 || b>10 || c<0 || c>10){
+                    return "Điểm phải từ 0 đến 10";
+                    document.writeln("Điểm phải từ 0-10");
+                } else{
+                diemHe10 = a*0.6 + b*0.3 + c*0.1;
+                if (diemHe10 < 4) {
+                    document.writeln("Điểm hệ chữ: F");
+                } else if (diemHe10 < 5.5) {
+                    document.writeln("Điểm hệ chữ: D");
+                } else if (diemHe10 < 7) {
+                    document.writeln("Điểm hệ chữ: C");
+                } else if (diemHe10 < 8.5) {
+                    document.writeln("Điểm hệ chữ: B");
+                } else {
+                    document.writeln("Điểm hệ chữ: A");
+                }           
+            }     
+            }
+        }
+        var diemA = prompt("Nhập điểm A","0-10");
+        var diemB = prompt("Nhập điểm B","0-10");
+        var diemC = prompt("Nhập điểm C","0-10");
+        tinhDiem(diemA,diemB,diemC);
+
+         </script>
 </body>
 </html>
