@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .video{
+            
+            margin:auto;
+            text-align:center;
+           
+        }
+        .danh-sach{
+            width:80%;
+            display:flex;
+            margin:50px auto;
+            justify-content:space-between;
+        }
+        .anh{
+            width:24%;
+            height:100px;
+            background-color:aqua;
+            
+        }
+        img{
+            width:100%;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+     <!-- màn xem -->
+    <div class="video">
+    <iframe  width="560" height="315" src="https://www.youtube.com/embed/eedlpxUw8zg?si=2U5Liw2ucLrBwsrO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3 class="ten">CONGB - chờ chút... | TINH HÀ SAY HI [PERFORMANCE]</h3>
+    </div>
+    <div class="danh-sach" > 
+        <div class="anh" onclick="chonVid(1)">
+          <img src="anh1.jpg" alt="">
+          <p>CONGB - chờ chút... | TINH HÀ SAY HI [PERFORMANCE]</p>
+        </div>
+        <div class="anh" onclick="chonVid(2)">
+          <img src="anh2.jpg" alt="">
+          <p>SECRET - Cody Nam Võ, Quang Hùng MasterD, Wren Evans, CONGB | TINH HÀ SAY HI [PERFORMANCE]</p>
+        </div>
+        <div class="anh" onclick="chonVid(3)">
+          <img src="anh3.jpg" alt="">
+          <p>LAVIEM - Quang Hùng MasterD, Pháp Kiều, CoolKid, CAPTAIN BOY, DANNY CHUNG | TINH HÀ SAY HI</p>
+        </div>
+        <div class="anh" onclick="chonVid(4)">
+          <img src="anh4.jpg" alt="">
+          <p>VƯỢT NGƯỠNG TÌNH YÊU - HURRYKNG, Dương Domic, KIMLONG, XUÂN ĐỊNH KY, FrancisGotHeat | TINH HÀ SAY HI</p>
+        </div>
+    </div>
+    <script>
+        var danhSachVid =[
+            {
+                id:1,
+                ten:"CONGB - chờ chút... | TINH HÀ SAY HI [PERFORMANCE]",
+                duongDanAnh:"anh1.jpg",
+                duongDanYoutube:"https://www.youtube.com/embed/eedlpxUw8zg?si=5DbAEGI2S0TY7dYB",
+            },
+            {
+                id:2,
+                ten:"SECRET - Cody Nam Võ, Quang Hùng MasterD, Wren Evans, CONGB | TINH HÀ SAY HI [PERFORMANCE]",
+                duongDanAnh:"anh2.jpg",
+                duongDanYoutube:"https://www.youtube.com/embed/Rb3hfEPyJxQ?si=ZkK9NCmdYcDrvl5c",
+            },
+            {
+                id:3,
+                ten:"LAVIEM - Quang Hùng MasterD, Pháp Kiều, CoolKid, CAPTAIN BOY, DANNY CHUNG | TINH HÀ SAY HI",
+                duongDanAnh:"anh3.jpg",
+                duongDanYoutube:"https://www.youtube.com/embed/XqLsUne19Gs?si=jdGc9xAGzBkbuli8",
+            },
+            {
+                id:4,
+                ten:"VƯỢT NGƯỠNG TÌNH YÊU - HURRYKNG, Dương Domic, KIMLONG, XUÂN ĐỊNH KY, FrancisGotHeat | TINH HÀ SAY HI",
+                duongDanAnh:"anh4.jpg",
+                duongDanYoutube:"https://www.youtube.com/embed/3YJegkIccEY?si=Dj_d9Eg7DpvHqvcl" ,
+            },
+        ];
+        function chonVid(id){
+            for(let i=0;i<danhSachVid.length;i++){
+                if(danhSachVid[i].id==id){
+                    document.getElementsByClassName("ten")[0].innerHTML=danhSachVid[i].ten;
+                    document.getElementsByTagName("iframe")[0].src=danhSachVid[i].duongDanYoutube;
+                }
+           
+            }
+        }
+       
+    </script>
+</body>
+</html>

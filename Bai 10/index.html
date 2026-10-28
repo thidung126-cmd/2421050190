@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 10-Js</title>
+    <style>
+        img{
+            width:20%;
+        }
+       .noi-dung{
+           width:100%;
+           text-align:center;
+       }
+    </style>
+</head>
+<body>
+    <div class="noi-dung">
+        <h1 class="che-do">Chế độ sáng</h1>
+        <img class="anh" src="bai9 -javascript/mattroi.png">
+        <div class="chuc-nang">
+            <button onclick="doiCheDo()">Đổi chế độ</button>
+        </div>
+    </div>
+    <script>
+        //che do (boolean :sáng-true/false-toi)
+        var cheDo=true;//khi bấm vào đổi thì sẽ thay đổi gtri của giá trị này
+        function doiCheDo(){
+            if(cheDo==true){
+                document.getElementsByTagName("body")[0].style="background-color:black";
+                document.getElementsByClassName("che-do")[0].style="color:white";
+                document.getElementsByClassName("che-do")[0].innerHTML="chế độ tối";
+                document.getElementsByTagName("img")[0].src="bai9 -javascript/mattrang.png";
+                cheDo=false;
+            }else{
+                document.getElementsByTagName("body")[0].style="background-color:white";
+                document.getElementsByClassName("che-do")[0].style="color:Black";
+                document.getElementsByClassName("che-do")[0].innerHTML="chế độ tối";
+                document.getElementsByTagName("img")[0].src="bai9 -javascript/mattroi.png";
+                cheDo=true;
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

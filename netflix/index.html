@@ -30,8 +30,14 @@
      </div>
     </header>
     <main>
-        <div class="banner">
-           <img class="banner-anh" src="banner.jpg" alt="">
+        <!-- xemTrailer():gọi hàm xemTrailer để thực hiện các câu lệnh bên trong hàm. -->
+        <!-- xemTrailer():Chỉ lấy tham chiếu đến hàm, không thực thi các câu lệnh bên trong hàm. -->
+        <div  onclick="xemTrailer()" class="banner">
+           <img  class="banner-anh" src="banner.jpg" alt="">
+        </div>
+        <!-- style:"display:none"; để ẩn video -->
+        <div   style="display:none;" class="banner">
+            <iframe   src="https://www.youtube.com/embed/I9qUzR3bHxA?si=lWeUDmp58rkm5Q4j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="danh-sach-the-loai">
             <div class="the-loai">
@@ -41,13 +47,12 @@
                 <!-- danh sach 1 -->
           <div class="danh-sach-phim">
             <div class="phim">
-                <img src="phim1.jpg" class="phim-poster"></img>
-                <img src="phim2.jpg" class="phim-poster"></img>
-                <img src="phim3.jpg" class="phim-poster"></img>
-                <img src="phim1.jpg" class="phim-poster"></img>
-                <img src="phim2.jpg" class="phim-poster"></img>
-                <img src="phim3.jpg" class="phim-poster"></img>
-                <img src="phim1.jpg" class="phim-poster"></img>
+                <img src="../anh/phim1.jpg" class="phim-poster" onclick="chonPhim(1)"></img>
+                <img src="../anh/phim2.jpg" class="phim-poster" onclick="chonPhim(2)"></img>
+                <img src="../anh/phim3.jpg" class="phim-poster" onclick="chonPhim(3)"></img>
+                <img src="../anh/phim4.jpg" class="phim-poster" onclick="chonPhim(4)"></img>
+                <img src="../anh/phim5.jpg" class="phim-poster" onclick="chonPhim(5)"></img>
+                
             </div>
           </div>
         </div>
@@ -57,13 +62,12 @@
                    <!-- danh sach 2 -->
           <div class="danh-sach-phim">
             <div class="phim">
-                <img src="phim1.jpg" class="phim-poster"></img>
-                <img src="phim2.jpg" class="phim-poster"></img>
-                <img src="phim3.jpg" class="phim-poster"></img>
-                <img src="phim1.jpg" class="phim-poster"></img>
-                <img src="phim2.jpg" class="phim-poster"></img>
-                <img src="phim3.jpg" class="phim-poster"></img>
-                <img src="phim1.jpg" class="phim-poster"></img>
+                <img src="../anh/phim6.jpg" class="phim-poster" onclick="chonPhim(6)"></img>
+                <img src="../anh/phim7.jpg" class="phim-poster" onclick="chonPhim(7)"></img>
+                <img src="../anh/phim8.jpg" class="phim-poster" onclick="chonPhim(8)"></img>
+                <img src="../anh/phim9.jpg" class="phim-poster" onclick="chonPhim(9)"></img>
+                <img src="../anh/phim10.jpg" class="phim-poster" onclick="chonPhim(10)"></img>
+               
             </div>
           </div>
         </div>
@@ -74,13 +78,12 @@
                    <!-- danh sach 3-->
           <div class="danh-sach-phim">
             <div class="phim">
-                <img src="phim1.jpg" class="phim-poster"></img>
-                <img src="phim2.jpg" class="phim-poster"></img>
-                <img src="phim3.jpg" class="phim-poster"></img>
-                <img src="phim1.jpg" class="phim-poster"></img>
-                <img src="phim2.jpg" class="phim-poster"></img>
-                <img src="phim3.jpg" class="phim-poster"></img>
-                <img src="phim1.jpg" class="phim-poster"></img>
+                <img src="../anh/phim11.jpg" class="phim-poster" onclick="chonPhim(11)"></img>
+                <img src="../anh/phim12.jpg" class="phim-poster" onclick="chonPhim(12)"></img>
+                <img src="../anh/phim13.jpg" class="phim-poster" onclick="chonPhim(13)"></img>
+                <img src="../anh/phim14.jpg" class="phim-poster" onclick="chonPhim(14)"></img>
+                <img src="../anh/phim15.jpg" class="phim-poster" onclick="chonPhim(15)"></img>
+                
             </div>
           </div>
         </div>
@@ -90,13 +93,12 @@
                    <!-- danh sach 4 -->
           <div class="danh-sach-phim">
             <div class="phim">
-                <img src="phim1.jpg" class="phim-poster"></img>
-                <img src="phim2.jpg" class="phim-poster"></img>
-                <img src="phim3.jpg" class="phim-poster"></img>
-                <img src="phim1.jpg" class="phim-poster"></img>
-                <img src="phim2.jpg" class="phim-poster"></img>
-                <img src="phim3.jpg" class="phim-poster"></img>
-                <img src="phim1.jpg" class="phim-poster"></img>
+                <img src="../anh/phim16.jpg" class="phim-poster" onclick="chonPhim(16)"></img>
+                <img src="../anh/phim17.jpg" class="phim-poster" onclick="chonPhim(17)"></img>
+                <img src="../anh/phim18.jpg" class="phim-poster" onclick="chonPhim(18)"></img>
+                <img src="../anh/phim19.jpg" class="phim-poster" onclick="chonPhim(19)"></img>
+                <img src="../anh/phim20.jpg" class="phim-poster" onclick="chonPhim(20)"></img>
+                
             </div>
           </div>
         </div>
@@ -106,13 +108,12 @@
                    <!-- danh sach 5 -->
           <div class="danh-sach-phim">
             <div class="phim">
-                <img src="phim1.jpg" class="phim-poster"></img>
-                <img src="phim2.jpg" class="phim-poster"></img>
-                <img src="phim3.jpg" class="phim-poster"></img>
-                <img src="phim1.jpg" class="phim-poster"></img>
-                <img src="phim2.jpg" class="phim-poster"></img>
-                <img src="phim3.jpg" class="phim-poster"></img>
-                <img src="phim1.jpg" class="phim-poster"></img>
+                <img src="../anh/phim21.jpg" class="phim-poster" onclick="chonPhim(21)"></img>
+                <img src="../anh/phim22.jpg" class="phim-poster" onclick="chonPhim(22)"></img>
+                <img src="../anh/phim23.jpg" class="phim-poster" onclick="chonPhim(23)"></img>
+                <img src="../anh/phim24.jpg" class="phim-poster" onclick="chonPhim(24)"></img>
+                <img src="../anh/phim25.jpg" class="phim-poster" onclick="chonPhim(25)"></img>
+                
             </div>
           </div>
         </div>
@@ -122,13 +123,12 @@
                    <!-- danh sach 6 -->
           <div class="danh-sach-phim">
             <div class="phim">
-                <img src="phim1.jpg" class="phim-poster"></img>
-                <img src="phim2.jpg" class="phim-poster"></img>
-                <img src="phim3.jpg" class="phim-poster"></img>
-                <img src="phim1.jpg" class="phim-poster"></img>
-                <img src="phim2.jpg" class="phim-poster"></img>
-                <img src="phim3.jpg" class="phim-poster"></img>
-                <img src="phim1.jpg" class="phim-poster"></img>
+                <img src="../anh/phim26.jpg" class="phim-poster" onclick="chonPhim(26)"></img>
+                <img src="../anh/phim27.jpg" class="phim-poster" onclick="chonPhim(27)"></img>
+                <img src="../anh/phim28.jpg" class="phim-poster" onclick="chonPhim(28)"></img>
+                <img src="../anh/phim29.jpg" class="phim-poster" onclick="chonPhim(29)"></img>
+                <img src="../anh/phim30.jpg" class="phim-poster" onclick="chonPhim(30)"></img>
+               
             </div>
           </div>
         </div>
@@ -137,12 +137,12 @@
                    <h2>Nhân vật</h2>
                    <!-- danh sach 7 -->
           <div class="danh-sach-nhan-vat">
-                <img src="banner.jpg" class="nhan-vat"></img>
-                <img src="banner.jpg" class="nhan-vat"></img>
-                <img src="banner.jpg" class="nhan-vat"></img>
-                <img src="banner.jpg" class="nhan-vat"></img>
-                <img src="banner.jpg" class="nhan-vat"></img>
-                <img src="banner.jpg" class="nhan-vat"></img>
+                <img src="../anh/nhanvat1.jpg" class="nhan-vat"></img>
+                <img src="../anh/nhanvat2.jpg" class="nhan-vat"></img>
+                <img src="../anh/nhanvat3.jpg" class="nhan-vat"></img>
+                <img src="../anh/nhanvat4.jpg" class="nhan-vat"></img>
+                <img src="../anh/nhanvat5.jpg" class="nhan-vat"></img>
+                <img src="../anh/nhanvat6.jpg" class="nhan-vat"></img>
             </div>
           </div>
         </div>
@@ -169,5 +169,8 @@
             </div>
         </div>
     </main>
+    <script src="script.js">
+        
+    </script>
 </body>
 </html>

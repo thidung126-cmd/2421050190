@@ -42,6 +42,7 @@
         document.writeln(ketQua);
         //++
         document.writeln("<br>")
+        //in trước cộng sau
         document.writeln(soThunhat++)
         // document.writeln("<br>")
         // document.writeln(soThunhat)
@@ -49,6 +50,7 @@
         // document.writeln("<br>")
         // document.writeln(soThunhat--)
         // document.writeln("<br>")
+        //cộng trước in sau
         // document.writeln(--soThunhat)
 
         soThunhat+=soThuhai;
@@ -67,12 +69,13 @@
 
         //
         var hoVaTen = "Nguyen Thi Dung";
-        // indexOf thứ tự của các ký tự
+        // indexOf tìm vị trí xuất hiện đầu tiên của ký tự
         document.writeln(hoVaTen.indexOf("T"));
         document.writeln("<br>");
         // kiem tra ky tu có trong chuoi 
         document.writeln(hoVaTen.includes("k"));
         document.writeln("<br>");
+        //kiểm tra chuỗi có bát đầu bằng chữ ... không
         document.writeln(hoVaTen.startsWith("Nguyen"));
         document.writeln("<br>");
         // thay thế một ký tự hay gia tri
@@ -88,7 +91,7 @@
         var ngay = new Date("09/30/2026");
         document.writeln("<br>");
         document.writeln(ngay);
-        // hàm gọi nam
+        // hàm gọi để lấy ra năm từ
         var namNay = homNay.getFullYear();
         document.writeln("<br>");
         document.writeln(namNay);
@@ -234,6 +237,7 @@
     //     document.writeln("Bạn cảm ơn lần thứ "+index);
     // }
     //  var mang1 = [1,2,3,4,5,"Dung","Canh","Nhi"]
+    // var mang = [1,2,3,4,5,"Dung","Canh","Nhi"]
     document.writeln("<br");
     for (var i = 0; i < mang.length; i++){
      if(isNaN(mang[i])==true){

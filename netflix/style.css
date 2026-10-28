@@ -52,9 +52,11 @@ header{
     margin:20px auto;
     border-radius:20px;
 }
+
 .banner-anh{
     width:100%;
     border-radius:20px;
+    height:700px;
 }
 .danh-sach-the-loai{
     width:95%;
@@ -69,7 +71,7 @@ header{
 }
 .phim-poster{
     width:20%;
-    height:15vh;
+    height:20vh;
     border-radius: 15px;
     background-color:aliceblue;
 }
