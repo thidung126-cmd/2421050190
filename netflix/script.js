@@ -1,5 +1,5 @@
 var danhSachPhim=[
-    {
+{
         id:0,
         ten: "Cảnh sát trưởng Labrado",
         thoiLuong:20,
@@ -139,20 +139,97 @@ var danhSachPhim=[
     banner:"../anh/phim19.jpg",
     trailer:"https://www.youtube.com/embed/vFqdKRHJoRA?si=lsJRt3OlZr2Bjccu",
 },
+{
+    id:20,
+    ten:"Khách sạn huyền bí",
+    thoiLuong:15,
+    banner:"../anh/phim20.jpg",
+    trailer:"https://www.youtube.com/embed/MMl6zVxQMx8?si=wiVuuD6XTf71flOF",
+},
+{
+    id:21,
+    ten:"Ralph breaks the internet",
+    thoiLuong:15,
+    banner:"../anh/phim21.jpg",
+    trailer:"https://www.youtube.com/embed/GJmrphcXrSU?si=X7m969gQeGj05OXz" ,
+},
+{
+    id:22,
+    ten:"Chú Chuột đầu bếp",
+    thoiLuong:15,
+    banner:"../anh/phim22.jpg",
+    trailer:"https://www.youtube.com/embed/_6ww9NdgMCk?si=KFPURdduakUbp3WE" ,
+},
+{
+    id:23,
+    ten:"Up",
+    thoiLuong:15,
+    banner:"../anh/phim23.jpg",
+    trailer:"https://www.youtube.com/embed/ABBAzWNl4Zc?si=OvallgyOfQjlxCPO",
+},
+{
+    id:24,
+    ten:"Madagascar",
+    thoiLuong:15,
+    banner:"../anh/phim24.jpg",
+    trailer:"https://www.youtube.com/embed/qLvTyp0WL7s?si=Jhgq2EPnlTRLHFmL",
+},
+{
+    id:25,
+    ten:"Những chú chim giận dữ",
+    thoiLuong:15,
+    banner:"../anh/phim25.jpg",
+    trailer:"https://www.youtube.com/embed/EndmaV6Bbjo?si=3-cC6J2J8emUq8k9",
+},
+{
+    id:26,
+    ten:"Học sinh cá biệt",
+    thoiLuong:15,
+    banner:"../anh/phim26.jpg",
+    trailer:"https://www.youtube.com/embed/amW2-MTf1hs?si=3kJ0sncEeJRRbw7B",
+},
+{
+    id:27,
+    ten:"Thói sĩ diện",
+    thoiLuong:15,
+    banner:"../anh/phim27.jpg",
+    trailer:"https://www.youtube.com/embed/T2BYO8Yxvxg?si=aIlDModQjSBeyOYQ" ,
+},
+{
+    id:28,
+    ten:"Cô nàng đẹp trai",
+    thoiLuong:15,
+    banner:"../anh/phim28.jpg",
+    trailer:"https://www.youtube.com/embed/qFWbYUOFbSU?si=lxOD-rPaNup1411s",
+},
+{
+    id:29,
+    ten:"Bài văn 1 điểm",
+    thoiLuong:15,
+    banner:"../anh/phim29.jpg",
+    trailer:"https://www.youtube.com/embed/O2BpLiZOaQ4?si=R6zwyILKXkKLXC4Q",
+},
+{
+    id:30,
+    ten:"Con gái lười biếng",
+    thoiLuong:15,
+    banner:"../anh/phim30.jpg",
+    trailer:"https://www.youtube.com/embed/T5I9UW7o1DQ?si=z5JCR8HLJ8mAqS-1" ,
+},
 ];
+
 function xemTrailer(){
     document.getElementsByClassName("banner")[0].style="display:none";
     document.getElementsByClassName("banner")[1].style="display:block";
-     
-    
 }
- function chonPhim(id){
+function chonPhim(id){
             for(let i=0;i<danhSachPhim.length;i++){
                 if(danhSachPhim[i].id==id){
-                    
-                    document.getElementsTagName("iframe")[0].src=danhSachPhim[i].trailer;
+                    document.getElementsByTagName("img")[2].src=danhSachPhim[i].banner;
+                    document.getElementsByTagName("iframe")[0].src=danhSachPhim[i].trailer;
+                    document.getElementsByClassName("banner")[0].style="display:block";
+                    document.getElementsByClassName("banner")[1].style="display:none";
                 }
            
             }
         }
-       
