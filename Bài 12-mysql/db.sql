@@ -94,3 +94,12 @@ INSERT INTO `phim_dien_vien`( `phim_id`, `dien_vien_id`) VALUES (3,3);
 
 -- nguoi_dung
 INSERT INTO `nguoi_dung`( `ten_dang_nhap`, `mat_khau`, `email`, `ho_ten`, `ngay_sinh`, `so_dien_thoai`, `gioi_tinh`) VALUES ('Nhung','acb','admin@gmail.com','Nguyễn Thị Nhung','2006-07-17','0123456789',1);
+--
+SELECT p.ten_phim, dd.ho_ten as 'dao_dien',tl.ten_the_loai FROM 'phim' p 
+join 'dao_dien' dd 
+on p.dao_dien_id = dd.id
+join 'phim_the_loai' ptl 
+on p.id = ptl.phim_id 
+JOIN the_loai tl
+on tl.id = ptl.the_loai_id
+where p.id = 1;
